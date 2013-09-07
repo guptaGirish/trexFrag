@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.srijan.trex"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.srijan.trex.HomePageActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".AddNewCategoryActivity" android:theme="@android:style/Theme.Dialog"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.srijan.trex.AddNewCategoryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".ExpenseCompleteActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.srijan.trex.ExpenseCompleteActivity" />
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".AddExpenseTagActivity" android:theme="@android:style/Theme.Dialog"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.srijan.trex.AddExpenseTagActivity" />
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".UpdateExpenseActivity" android:theme="@android:style/Theme.Dialog"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.srijan.trex.UpdateExpenseActivity" />
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".CategoryExpenseActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.srijan.trex.CategoryExpenseActivity" />
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name=".SettingsFragment"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.srijan.trex.SettingsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name="TrexAppWidgetProvider" >
+			    <intent-filter>
+			        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			        <action android:name="android.appwidget.action.CHANGE_MODE" />
+			    </intent-filter>
+			    
+			    <meta-data android:name="android.appwidget.provider"
+			               android:resource="@xml/widgetinfo" />
+		</receiver>
+        
+    </application>
+
+</manifest>

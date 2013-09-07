@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogboxbackground"
+   
+    
+    >
+    
+       <TextView
+        android:id="@+id/page_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+		style="@style/header"       
+        android:text="Home Page" 
+        
+        />
+    
+    
+    
+<Button
+        android:id="@+id/add_new_expense_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_expense_tag"
+        android:layout_below="@+id/page_header"
+        android:drawableLeft="@drawable/ic_add_def"
+        android:background="#A2CB0F"
+        android:textColor="#2F3B3B"
+        
+         />
+    
+    
+            <ListView
+                android:id="@+id/tag_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_new_expense_tag"  
+                 >
+                
+            </ListView>
+            
+
+    
+
+    
+
+    
+</RelativeLayout>

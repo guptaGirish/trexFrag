@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogboxbackground"
+    
+    >
+    <TextView
+        android:id="@+id/page_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+		style="@style/header"       
+        android:text="" 
+        
+        android:paddingLeft = "10dp"
+        android:paddingRight="250dp"
+        
+        />
+
+    <EditText
+        android:id="@+id/tagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_header"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"		
+		android:layout_centerHorizontal="true"
+        android:background="@drawable/editboxshape"
+        android:hint= "@string/add_expense_tag_hint"
+        android:ems="12" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/addTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tagText"
+        android:background="@drawable/addtagbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/add_tag" />
+
+</RelativeLayout>
