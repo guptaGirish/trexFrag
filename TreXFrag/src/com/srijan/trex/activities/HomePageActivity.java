@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
 
-import viewpageradapter.PagerAdapter;
 
 import com.srijan.trex.R;
 import com.srijan.trex.R.drawable;
@@ -18,6 +17,7 @@ import com.srijan.trex.fragments.ExpenseCompleteFragment;
 import com.srijan.trex.fragments.HomePageFragment;
 import com.srijan.trex.fragments.SettingsFragment;
 import com.srijan.trex.listingunreviewedtags.CustomArrayAdapter;
+import com.srijan.trex.viewpageradapter.PagerAdapter;
 
 import android.os.Bundle;
 import android.os.Parcelable;

@@ -1,4 +1,4 @@
-package viewpageradapter;
+package com.srijan.trex.viewpageradapter;
 
 import java.util.List;
 
