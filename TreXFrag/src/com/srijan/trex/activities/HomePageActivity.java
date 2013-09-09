@@ -1,4 +1,4 @@
-package com.srijan.trex;
+package com.srijan.trex.activities;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -6,6 +6,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
 
+import viewpageradapter.PagerAdapter;
+
+import com.srijan.trex.R;
+import com.srijan.trex.R.drawable;
+import com.srijan.trex.R.id;
+import com.srijan.trex.R.layout;
+import com.srijan.trex.adapters.DbAdapter;
+import com.srijan.trex.fragments.CategoryListingFragment;
+import com.srijan.trex.fragments.ExpenseCompleteFragment;
+import com.srijan.trex.fragments.HomePageFragment;
+import com.srijan.trex.fragments.SettingsFragment;
 import com.srijan.trex.listingunreviewedtags.CustomArrayAdapter;
 
 import android.os.Bundle;
@@ -133,6 +144,8 @@ public static interface MethodCallBackHomePage{
     */    
         activity = HomePageActivity.this ;
         
+        
+        createDatabase() ;
         //activity = (Activity) getApplicationContext() ;
         setContentView(R.layout.activity_home_page);
         
@@ -411,6 +424,19 @@ static int tabPosition ;
 
 
 
+	/*
+	 * If this activity is opened first time after installation of this app in the device then
+	 * creation of DB schema for this app is done using this method 
+	 * 
+	 * */
+		private void createDatabase() {
+			
+			//Log.v(TAG,"In createDatabase : Creating DB");
+			DbAdapter dbAdapter = new DbAdapter(activity);
+			dbAdapter.open();
+			dbAdapter.close();
+	    	
+		}
 
 
 	

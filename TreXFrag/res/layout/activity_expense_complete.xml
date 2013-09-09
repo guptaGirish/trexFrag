@@ -5,7 +5,7 @@ android:layout_height="fill_parent"
 android:orientation="vertical"    
      >
 <fragment 
-class="com.srijan.trex.ExpenseCompleteFragment"
+class="com.srijan.trex.fragments.ExpenseCompleteFragment"
 android:id="@+id/expense_complete"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"

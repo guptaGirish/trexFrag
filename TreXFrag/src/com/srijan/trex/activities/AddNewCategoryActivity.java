@@ -1,4 +1,8 @@
-package com.srijan.trex;
+package com.srijan.trex.activities;
+
+import com.srijan.trex.R;
+import com.srijan.trex.R.id;
+import com.srijan.trex.R.layout;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -22,7 +26,7 @@ public class AddNewCategoryActivity extends Activity {
 	private Button cancel, addCategory ;
 	private EditText newCategoryName ;
 
-	static String CATEGORY_NAME = "category_name" ; 
+	public static String CATEGORY_NAME = "category_name" ; 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

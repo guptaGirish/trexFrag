@@ -1,5 +1,9 @@
-package com.srijan.trex;
+package com.srijan.trex.activities;
 
+import com.srijan.trex.R;
+import com.srijan.trex.R.id;
+import com.srijan.trex.R.layout;
+import com.srijan.trex.fragments.CategoryExpenseFragment;
 import com.srijan.trex.listingexpense.ExpenseArrayAdapter;
 
 import android.app.Activity;

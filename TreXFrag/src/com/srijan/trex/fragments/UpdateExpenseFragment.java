@@ -1,10 +1,14 @@
-package com.srijan.trex;
+package com.srijan.trex.fragments;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.TimeZone;
 
+import com.srijan.trex.R;
+import com.srijan.trex.R.id;
+import com.srijan.trex.R.layout;
+import com.srijan.trex.activities.AddNewCategoryActivity;
 import com.srijan.trex.adapters.CategoryDbAdapter;
 import com.srijan.trex.adapters.ExpenseDbAdapter;
 import com.srijan.trex.listingcategory.CategoryArrayAdapter;

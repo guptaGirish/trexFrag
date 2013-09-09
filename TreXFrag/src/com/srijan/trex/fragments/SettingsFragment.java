@@ -1,4 +1,7 @@
-package com.srijan.trex;
+package com.srijan.trex.fragments;
+
+import com.srijan.trex.R;
+import com.srijan.trex.R.layout;
 
 import android.app.Activity;
 import android.os.Bundle;

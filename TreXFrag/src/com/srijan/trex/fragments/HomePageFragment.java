@@ -1,7 +1,12 @@
-package com.srijan.trex;
+package com.srijan.trex.fragments;
 
 import java.util.ArrayList;
 
+import com.srijan.trex.R;
+import com.srijan.trex.R.id;
+import com.srijan.trex.R.layout;
+import com.srijan.trex.activities.HomePageActivity;
+import com.srijan.trex.activities.HomePageActivity.MethodCallBackHomePage;
 import com.srijan.trex.adapters.DbAdapter;
 import com.srijan.trex.adapters.UnreviewedExpenseDbAdapter;
 import com.srijan.trex.listingunreviewedtags.CustomArrayAdapter;
@@ -55,7 +60,7 @@ public class HomePageFragment extends Fragment implements HomePageActivity.Metho
 		//return super.onCreateView(inflater, container, savedInstanceState);
 		viewer = inflater.inflate(R.layout.fragment_home_page, container, false) ;
 		 
-		 createDatabase();
+		 //createDatabase();
 		 
 		initializeControls();
 	      
@@ -84,20 +89,7 @@ public class HomePageFragment extends Fragment implements HomePageActivity.Metho
 		}
 
 		
-		/*
-		 * If this activity is opened first time after installation of this app in the device then
-		 * creation of DB schema for this app is done using this method 
-		 * 
-		 * */
-			private void createDatabase() {
-				
-				//Log.v(TAG,"In createDatabase : Creating DB");
-				DbAdapter dbAdapter = new DbAdapter(activity);
-				dbAdapter.open();
-				dbAdapter.close();
-		    	
-			}
-
+		
 			/*
 			 * This method is to populate listView with all uncomplete tagged expenses stored in DB
 			 * */

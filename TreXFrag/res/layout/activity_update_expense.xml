@@ -3,7 +3,7 @@
 
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-class="com.srijan.trex.UpdateExpenseFragment"
+class="com.srijan.trex.fragments.UpdateExpenseFragment"
 android:id="@+id/update_expense"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"

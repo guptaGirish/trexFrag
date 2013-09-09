@@ -25,7 +25,7 @@ public class ExpenseDbAdapter {
 	
 
     private String TAG = "ExpenseDbAdapter";
-    private static final String DATABASE_NAME = "trex1";
+    private static final String DATABASE_NAME = DbAdapter.DATABASE_NAME;
     private static final String DATABASE_TABLE = "expenses";
     private static final int DATABASE_VERSION = 1;
     

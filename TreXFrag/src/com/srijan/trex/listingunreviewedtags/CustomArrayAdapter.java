@@ -6,11 +6,12 @@ import java.util.Locale;
 import java.util.TimeZone;
 import android.support.v4.app.FragmentActivity;
 
-import com.srijan.trex.ExpenseCompleteActivity;
-import com.srijan.trex.ExpenseCompleteFragment;
-import com.srijan.trex.HomePageActivity;
-import com.srijan.trex.HomePageFragment;
 import com.srijan.trex.R;
+import com.srijan.trex.activities.ExpenseCompleteActivity;
+import com.srijan.trex.activities.HomePageActivity;
+import com.srijan.trex.fragments.ExpenseCompleteFragment;
+import com.srijan.trex.fragments.HomePageFragment;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

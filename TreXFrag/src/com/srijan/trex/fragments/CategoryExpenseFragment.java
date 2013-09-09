@@ -1,7 +1,12 @@
-package com.srijan.trex;
+package com.srijan.trex.fragments;
 
 import java.util.ArrayList;
 
+import com.srijan.trex.R;
+import com.srijan.trex.R.id;
+import com.srijan.trex.R.layout;
+import com.srijan.trex.activities.CategoryExpenseActivity;
+import com.srijan.trex.activities.CategoryExpenseActivity.UpdatesInCategoryExpenseElements;
 import com.srijan.trex.adapters.ExpenseDbAdapter;
 import com.srijan.trex.listingexpense.ExpenseArrayAdapter;
 import com.srijan.trex.listingexpense.ExpenseObject;

@@ -57,7 +57,7 @@ public class DbAdapter {
     	
         this.context = ctx;
         this.DBHelper = new DatabaseHelper(this.context);
-        //Log.v(TAG, "In DbAdapter Constructor") ;
+        Log.v(TAG, "In DbAdapter Constructor") ;
     }
 
     
@@ -80,7 +80,7 @@ public class DbAdapter {
     	DatabaseHelper(Context context) 
         {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
-          //  Log.v(TAG, "In Constructor") ;
+            Log.v(TAG, "In Constructor") ;
         }
 
         /*
@@ -91,11 +91,11 @@ public class DbAdapter {
         public void onCreate(SQLiteDatabase db) 
         {
             db.execSQL(CREATE_TABLE_CATEGORIES);
-            //Log.v(TAG, "Categories table created") ;
+            Log.v(TAG, "Categories table created") ;
             db.execSQL(CREATE_TABLE_EXPENSES);
-            //Log.v(TAG, "expense table created") ;
+            Log.v(TAG, "expense table created") ;
             db.execSQL(CREATE_TABLE_UNREVIEWED_EXPENSES);
-            //Log.v(TAG, "unreviewed table created") ;
+            Log.v(TAG, "unreviewed table created") ;
         }
 
         @Override
@@ -113,7 +113,7 @@ public class DbAdapter {
     public DbAdapter open() throws SQLException 
     {
         this.db = this.DBHelper.getWritableDatabase();
-        //Log.v(TAG, "Database opened") ;
+        Log.v(TAG, "Database opened") ;
         return this;
     }
 
@@ -123,7 +123,7 @@ public class DbAdapter {
     public void close() 
     {
         this.DBHelper.close();
-        //Log.v(TAG, "Database closed") ;
+        Log.v(TAG, "Database closed") ;
     }
 	
 	

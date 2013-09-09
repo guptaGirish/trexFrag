@@ -1,6 +1,11 @@
-package com.srijan.trex;
+package com.srijan.trex.widgetprovider;
 
 
+
+import com.srijan.trex.R;
+import com.srijan.trex.R.id;
+import com.srijan.trex.R.layout;
+import com.srijan.trex.activities.AddExpenseTagActivity;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -33,7 +38,7 @@ public class TrexAppWidgetProvider extends AppWidgetProvider{
 
             //Log.v(TAG,"Line 2") ;
             // Create an Intent to launch ExampleActivity
-            Intent intent = new Intent(context, com.srijan.trex.AddExpenseTagActivity.class);
+            Intent intent = new Intent(context, com.srijan.trex.activities.AddExpenseTagActivity.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
             //Log.v(TAG,"Line 3") ;
             

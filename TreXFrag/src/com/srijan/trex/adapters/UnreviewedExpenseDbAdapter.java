@@ -21,7 +21,7 @@ public class UnreviewedExpenseDbAdapter {
 	
 
     private String TAG = "UnreviewedExpenseDbAdapter";
-    private static final String DATABASE_NAME = "trex1";
+    private static final String DATABASE_NAME = DbAdapter.DATABASE_NAME;
     private static final String DATABASE_TABLE = "unreviewed_expenses";
     private static final int DATABASE_VERSION = 1;
     private DatabaseHelper mDbHelper;

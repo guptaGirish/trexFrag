@@ -1,4 +1,4 @@
-package com.srijan.trex;
+package com.srijan.trex.fragments;
 
 
 
@@ -6,6 +6,11 @@ import java.text.AttributedCharacterIterator.Attribute;
 import java.util.ArrayList;
 import java.util.jar.Attributes;
 
+import com.srijan.trex.R;
+import com.srijan.trex.R.drawable;
+import com.srijan.trex.R.id;
+import com.srijan.trex.R.layout;
+import com.srijan.trex.activities.CategoryExpenseActivity;
 import com.srijan.trex.adapters.CategoryDbAdapter;
 
 import android.app.Activity;

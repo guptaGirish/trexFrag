@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.TimeZone;
-import com.srijan.trex.CategoryExpenseActivity;
-import com.srijan.trex.CategoryExpenseFragment;
 import com.srijan.trex.R;
-import com.srijan.trex.UpdateExpenseActivity;
-import com.srijan.trex.UpdateExpenseFragment;
+import com.srijan.trex.activities.CategoryExpenseActivity;
+import com.srijan.trex.activities.UpdateExpenseActivity;
 import com.srijan.trex.adapters.ExpenseDbAdapter;
+import com.srijan.trex.fragments.CategoryExpenseFragment;
+import com.srijan.trex.fragments.UpdateExpenseFragment;
+
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;

@@ -1,4 +1,5 @@
-package com.srijan.trex;
+package com.srijan.trex.activities;
+
 
 import android.annotation.SuppressLint;
 import android.os.Parcel;

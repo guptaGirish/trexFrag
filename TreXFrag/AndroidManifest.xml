@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         <activity
-            android:name="com.srijan.trex.HomePageActivity"
+            android:name="com.srijan.trex.activities.HomePageActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
         </activity>
         
         <activity
-            android:name=".AddNewCategoryActivity" android:theme="@android:style/Theme.Dialog"
+            android:name="com.srijan.trex.activities.AddNewCategoryActivity" android:theme="@android:style/Theme.Dialog"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.srijan.trex.AddNewCategoryActivity" />
@@ -34,7 +34,7 @@
         </activity>
         
          <activity
-            android:name=".ExpenseCompleteActivity"
+            android:name="com.srijan.trex.activities.ExpenseCompleteActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.srijan.trex.ExpenseCompleteActivity" />
@@ -44,7 +44,7 @@
         </activity>
         
         <activity
-            android:name=".AddExpenseTagActivity" android:theme="@android:style/Theme.Dialog"
+            android:name="com.srijan.trex.activities.AddExpenseTagActivity" android:theme="@android:style/Theme.Dialog"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.srijan.trex.AddExpenseTagActivity" />
@@ -54,7 +54,7 @@
         </activity>
         
         <activity
-            android:name=".UpdateExpenseActivity" android:theme="@android:style/Theme.Dialog"
+            android:name="com.srijan.trex.activities.UpdateExpenseActivity" android:theme="@android:style/Theme.Dialog"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.srijan.trex.UpdateExpenseActivity" />
@@ -64,7 +64,7 @@
         </activity>
         
         <activity
-            android:name=".CategoryExpenseActivity"
+            android:name="com.srijan.trex.activities.CategoryExpenseActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.srijan.trex.CategoryExpenseActivity" />
@@ -75,7 +75,7 @@
         
         
          <activity
-            android:name=".SettingsFragment"
+            android:name="com.srijan.trex.fragments.SettingsFragment"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.srijan.trex.SettingsActivity" />
@@ -84,7 +84,7 @@
             </intent-filter>
         </activity>
         
-        <receiver android:name="TrexAppWidgetProvider" >
+        <receiver android:name="com.srijan.trex.widgetprovider.TrexAppWidgetProvider" >
 			    <intent-filter>
 			        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			        <action android:name="android.appwidget.action.CHANGE_MODE" />
